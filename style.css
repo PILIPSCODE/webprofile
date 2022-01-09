@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-image: url("https://i.ibb.co/1mzpFkG/gambar-bintang-hitam-5.jpg");
+}
+.container {
+  height: 620px;
+  margin: 20px auto;
+  border: 3px solid black;
+  width: 350px;
+  border-radius: 20px;
+  background-color: rgb(225, 225, 225, 0.3);
+  transition: 3s background-color ,
+              3s border;
+}
+.container .profile img {
+  display: flex;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50px;
+  margin-bottom: 5px;
+  transition: 0.4s border;
+  position: relative;
+}
+.container .profile .teks {
+  height: 65px;
+  margin: 5px auto;
+  width: 250px;
+  text-align: center;
+  color: white;
+  background-color: rgb(12, 13, 36, 0.8);
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.container .profile .teks h1 {
+  margin-bottom: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+.profile .info {
+  height: 50px;
+  margin: 5px auto;
+  width: 250px;
+  color: white;
+  background-color: rgb(12, 13, 36, 0.8);
+  border-radius: 20px;
+  border: 1px solid white;
+  text-align: center;
+}
+.container .profile .info h4 {
+  text-align: center;
+  margin: 5px;
+}
+.profile .promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  margin: 5px auto;
+  width: 250px;
+  color: white;
+  background-color: rgb(12, 13, 36, 0.8);
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.content {
+  height: 260px;
+  width: 250px;
+  margin: 50px auto;
+}
+.content ul li {
+  text-align: center;
+  margin: 40px 0;
+}
+.content ul li a {
+  display: inherit;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 0;
+  border-radius: 10px;
+  background-color: rgb(12, 13, 36, 0.8);
+}
+.content ul li a:hover {
+  background-color: lightblue;
+  color: black;
+  border: 2px solid black;
+}
+.container button {
+  justify-content: center;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 50px;
+}
+.hitam {
+  background-color: black;
+  border: 1px solid white;
+  left:-100px;
+}
+.border1 {
+  border: 4px solid red;
+  transition: 2s all;
+}
+.border2{
+  border: 4px solid blue;
+  transition: 2s all;
+}
+.fix{
+  position: fixed;
+}
+.fox{
+  position: fixed;
+  margin-left: 50px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid white;
+  color:white;
+  display: flex;
+  background-color: darkslateblue;
+  justify-content: center;
+}
+
+/* responsive */
+
+/* iphone 5 */
+@media screen and (max-width: 320px) {
+  .container {
+    width: 300px;
+    margin: 15px auto;
+  }
+  .container .profile img {
+    height: 80px;
+    margin: 10px auto;
+  }
+  .container .profile .teks {
+    width: 220px;
+  }
+  .profile .info {
+    width: 220px;
+  }
+  .profile .promo {
+    width: 220px;
+  }
+  .content ul li {
+    margin: 20px 0;
+  }
+}
+@media screen and (max-height: 568px) {
+  .container {
+    height: 530px;
+  }
+  .content {
+    height: 200px;
+    width: 220px;
+    margin: 30px auto;
+  }
+}
+/* moto g4 dan galaxy 5 */
+@media screen and (min-width: 360px) {
+  .container {
+    width: 300px;
+    margin: 15px auto;
+  }
+  .container .profile img {
+    height: 100px;
+    margin: 10px auto;
+  }
+  .container .profile .teks {
+    width: 220px;
+  }
+  .profile .info {
+    width: 220px;
+  }
+  .profile .promo {
+    width: 220px;
+    margin-bottom: 50px;
+  }
+  .content ul li {
+    margin: 20px 0;
+  }
+}
+@media screen and (min-height: 640px) {
+  .container {
+    height: 600px;
+  }
+  .content {
+    height: 200px;
+    width: 220px;
+  }
+}
+/* iphone 789 plus dan ip 10 */
+@media screen and (min-width: 414px) {
+  .container {
+    width: 300px;
+    margin: 15px auto;
+  }
+  .container .profile img {
+    height: 100px;
+    margin: 10px auto;
+  }
+  .container .profile .teks {
+    width: 240px;
+    height: 75px;
+  }
+  .profile .info {
+    width: 240px;
+    height: 65px;
+  }
+  .profile .promo {
+    width: 240px;
+  }
+  .content ul li {
+    margin: 20px 0;
+  }
+  .content ul li a {
+    padding: 8px 0;
+  }
+}
+@media screen and (min-height: 736px) {
+  .container {
+    height: 680px;
+    margin: 20px auto;
+    width: 330px;
+  }
+  .content {
+    height: 200px;
+    margin: 50px auto;
+    width: 240px;
+  }
+}
+@media screen and (min-height: 812px) {
+  .container {
+    height: 760px;
+    margin: 20px auto;
+    width: 330px;
+  }
+  .content {
+    height: 200px;
+    margin: 80px 0;
+  }
+  .container .profile img {
+    height: 100px;
+    margin: 50px auto;
+  }
+}
+/* nest hub */
+@media screen and (min-width: 1024px) {
+  .container .profile img {
+    height: 100px;
+    margin: 5px auto;
+  }
+  .container {
+    height: 550px;
+  }
+  .container .profile .teks {
+    width: 240px;
+    height: 65px;
+  }
+  .profile .info {
+    width: 240px;
+    height: 55px;
+  }
+  .profile .promo {
+    width: 240px;
+  }
+  .content ul li a {
+    padding: 5px 0;
+  }
+  .content{
+    width: 240px;
+  }
+}
+@media screen and (min-height: 600px) {
+  .content {
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .container .profile img {
+    height: 100px;
+    margin: 10px auto;
+  }
+  .container {
+    height: 630px;
+  }
+  .content {
+    margin: 50px auto;
+  }
+}
+/* pixel 2 */
+@media screen and (height: 731px) {
+  .container {
+    margin: 60px auto;
+  }
+}
+/* ipad */
+@media screen and (height: 1024px) {
+  .container {
+    margin: 100px auto;
+  }
+}
+/* ipad pro */
+@media screen and (height: 1366px) {
+  .container {
+    margin: 200px auto;
+    height: 950px;
+    width: 700px;
+  }
+  .container .profile img {
+    height: 150px;
+    margin: 10px auto;
+  }
+  .container .profile .teks {
+      font-size: 25px;
+    width: 440px;
+    height: 105px;
+  }
+  .profile .info {
+    font-size: 25px;
+    width: 440px;
+    height: 85px;
+  }
+  .profile .promo {
+      font-size: 25px;
+    width: 440px;
+    height: 55px;
+  }
+  .content{
+      margin: 100px auto;
+      width: 440px;
+  }
+  .content ul li {
+    margin: 20px 0;
+  }
+  .content ul li a {
+    padding: 20px 0;
+    font-size: 25px;
+  }
+}
+/* surface duo */
+@media screen and (height: 720px) {
+    .container{
+        margin: 55px auto;
+    }
+    .content{
+      width: 240px;
+    }
+}
+/* galaxy fold */
+@media screen and (max-width:280px){
+    .container{
+        width:250px;
+    }
+    .content{
+        margin: 40px auto;
+    }
+}
+/* nest hub max */
+@media screen and (width:1280px){
+    .container{
+        margin: 80px auto;
+    }
+}
